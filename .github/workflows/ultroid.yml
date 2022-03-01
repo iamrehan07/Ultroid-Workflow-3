@@ -29,7 +29,7 @@ jobs:
          run: |
            git clone https://${{ secrets.GitHubName }}:${{ secrets.GH_TOKEN }}@${{ secrets.CREDS }} ultroid
        - name: Running Ultroid
-         timeout-minutes: 360
+         timeout-minutes: 350
          continue-on-error: true
          run: |
            sudo sh action.sh
